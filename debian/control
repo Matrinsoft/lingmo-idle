@@ -1,0 +1,21 @@
+Source: lingmo-idle
+Section: admin
+Priority: optional
+Maintainer: Lingmo OS Team <team@lingmo.org>
+Build-Depends:
+  debhelper (>= 11),
+  debhelper-compat (= 11),
+  cargo,
+  just,
+  libxkbcommon-dev,
+  libwayland-dev,
+  pkg-config,
+Standards-Version: 4.3.0
+Homepage: https://github.com/Matrinsoft/lingmo-idle
+
+Package: lingmo-idle
+Architecture: amd64 arm64
+Depends:
+  ${misc:Depends},
+  ${shlibs:Depends}
+Description: Cosmic idle daemon
