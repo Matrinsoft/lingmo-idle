@@ -438,7 +438,7 @@ checksum = "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b"
 [[package]]
 name = "cosmic-config"
 version = "0.1.0"
-source = "git+https://github.com/Matrinsoft/liblingmo#2f0b3334914e4ab1b0f3df821eeadd7ad700566f"
+source = "git+https://github.com/Matrinsoft/liblingmo#891b24cd05ae5ed62d9ffabaa1ce991cb49227e4"
 dependencies = [
  "atomicwrites",
  "calloop 0.14.3",
@@ -456,7 +456,7 @@ dependencies = [
 [[package]]
 name = "cosmic-config-derive"
 version = "0.1.0"
-source = "git+https://github.com/Matrinsoft/liblingmo#2f0b3334914e4ab1b0f3df821eeadd7ad700566f"
+source = "git+https://github.com/Matrinsoft/liblingmo#891b24cd05ae5ed62d9ffabaa1ce991cb49227e4"
 dependencies = [
  "quote",
  "syn",
@@ -493,7 +493,7 @@ dependencies = [
 [[package]]
 name = "cosmic-settings-config"
 version = "0.1.0"
-source = "git+https://github.com/Matrinsoft/lingmo-settings-daemon#2753b60609a07abb9db6eab3c0f36a52d8347df4"
+source = "git+https://github.com/Matrinsoft/lingmo-settings-daemon#51d5cf6e7032f34b8eb62c30f74025c5c2dfa3d6"
 dependencies = [
  "cosmic-config",
  "ron",
@@ -932,7 +932,7 @@ dependencies = [
 [[package]]
 name = "iced_core"
 version = "0.14.0-dev"
-source = "git+https://github.com/Matrinsoft/liblingmo#2f0b3334914e4ab1b0f3df821eeadd7ad700566f"
+source = "git+https://github.com/Matrinsoft/liblingmo#891b24cd05ae5ed62d9ffabaa1ce991cb49227e4"
 dependencies = [
  "bitflags 2.10.0",
  "bytes",
@@ -954,7 +954,7 @@ dependencies = [
 [[package]]
 name = "iced_futures"
 version = "0.14.0-dev"
-source = "git+https://github.com/Matrinsoft/liblingmo#2f0b3334914e4ab1b0f3df821eeadd7ad700566f"
+source = "git+https://github.com/Matrinsoft/liblingmo#891b24cd05ae5ed62d9ffabaa1ce991cb49227e4"
 dependencies = [
  "futures",
  "iced_core",
