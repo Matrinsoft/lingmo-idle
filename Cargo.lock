@@ -931,7 +931,7 @@ dependencies = [
 
 [[package]]
 name = "iced_core"
-version = "0.14.0-dev"
+version = "0.14.0"
 source = "git+https://github.com/Matrinsoft/liblingmo#5d94314ca5b3f0e44cf19b78920c189a6f295a5f"
 dependencies = [
  "bitflags 2.10.0",
@@ -953,7 +953,7 @@ dependencies = [
 
 [[package]]
 name = "iced_futures"
-version = "0.14.0-dev"
+version = "0.14.0"
 source = "git+https://github.com/Matrinsoft/liblingmo#5d94314ca5b3f0e44cf19b78920c189a6f295a5f"
 dependencies = [
  "futures",
