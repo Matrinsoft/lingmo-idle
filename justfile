@@ -1,5 +1,5 @@
-name := 'cosmic-idle'
-export APPID := 'com.system76.CosmicIdle'
+name := 'lingmo-idle'
+export APPID := 'com.lingmoos.LingmoIdle'
 
 rootdir := ''
 prefix := '/usr'
@@ -44,7 +44,7 @@ check-json: (check '--message-format=json')
 
 mock:
     cargo build --release --example server
-    cosmic-comp {{cargo-target-dir}}/release/examples/server
+    lingmo-comp {{cargo-target-dir}}/release/examples/server
 
 # Run with debug logs
 run *args:

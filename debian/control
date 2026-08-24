@@ -18,4 +18,4 @@ Architecture: amd64 arm64
 Depends:
   ${misc:Depends},
   ${shlibs:Depends}
-Description: Cosmic idle daemon
+Description: Lingmo idle daemon

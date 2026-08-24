@@ -3,7 +3,7 @@
 use calloop::{EventLoop, channel, timer};
 use calloop_wayland_source::WaylandSource;
 use cosmic_config::{CosmicConfigEntry, calloop::ConfigWatchSource};
-use cosmic_idle_config::CosmicIdleConfig;
+use lingmo_idle_config::LingmoIdleConfig;
 use cosmic_settings_config::shortcuts;
 use futures_lite::stream::StreamExt;
 use std::{process::Command, time::Duration};
@@ -95,7 +95,7 @@ struct StateInner {
 struct State {
     inner: StateInner,
     outputs: Vec<Output>,
-    conf: CosmicIdleConfig,
+    conf: LingmoIdleConfig,
     screen_off_idle_notification: Option<IdleNotification>,
     suspend_idle_notification: Option<IdleNotification>,
     on_battery: bool,
@@ -271,8 +271,8 @@ fn main() {
         )
         .unwrap();
 
-    let config = cosmic_config::Config::new("com.system76.CosmicIdle", 1).unwrap();
-    let conf = CosmicIdleConfig::get_entry(&config).unwrap_or_else(|(errs, conf)| {
+    let config = cosmic_config::Config::new("com.lingmoos.LingmoIdle", 1).unwrap();
+    let conf = LingmoIdleConfig::get_entry(&config).unwrap_or_else(|(errs, conf)| {
         for err in errs {
             log::error!("Loading config: {}", err);
         }
